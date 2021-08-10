@@ -1,6 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   android:layout_width="match_parent"
-                                                   android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_marginTop="100dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="107dp"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp">
+                <TextView
+                        android:text="State/City "
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textViewState"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView
+
+                    android:text="State/CityName "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="79dp"
+                    android:layout_height="105dp"
+                    android:id="@+id/textViewStateName"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="72dp"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp">
+                <TextView
+
+                        android:text="Active"
+                        android:textColor="#EF0C0C"
+                        android:textSize="18dp"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:id="@+id/textView" android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/textViewActiveCases"
+                    android:text="20202"
+                    android:textColor="#EF0C0C"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+            />
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_increase"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/imageView2" android:layout_marginTop="-48dp"/>
+            <TextView
+                    android:text="1000"
+                    android:textColor="#EF0C0C"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewNewActiveCases"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_increase"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="-21dp"
+                    android:id="@+id/imageView4"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="71dp"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp">
+                <TextView
+                        android:text="Cured"
+                        android:textColor="#2CB132"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="158dp" android:id="@+id/textView6" android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView
+
+                    android:text="40000"
+                    android:textColor="#2CB132"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/textViewCuredCases"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="-35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_increase"
+                    android:id="@+id/imageView3"/>
+            <TextView
+                    android:text="4000"
+                    android:textColor="#2CB132"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCuredCasesToday"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="-21dp"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_increase"
+                    android:id="@+id/imageView5"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="72dp"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp">
+                <TextView
+                        android:text="Deaths"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="158dp" android:id="@+id/textView7" android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView
+                    android:text="500433"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:id="@+id/textViewDeathCasesTotal"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="-54dp"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_increase"
+                    android:id="@+id/imageView6"/>
+            <TextView
+                    android:text="30300"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:id="@+id/textViewDeathCasesToday"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="-21dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_increase"
+                    android:id="@+id/imageView7"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:text="Total"
+                    android:textColor="#ED2F2F"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp" android:id="@+id/textView8"/>
+            <TextView
+                    android:text="32020"
+                    android:textColor="#F12727"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:id="@+id/textViewTotalCasesTotal"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="-55dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_increase"
+                    android:id="@+id/imageView8"/>
+            <TextView
+                    android:text="3232"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#F12727"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:id="@+id/textViewTotalCasesIncreaseToday"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_increase"
+                    android:id="@+id/imageView9"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
